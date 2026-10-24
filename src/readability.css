@@ -1,0 +1,53 @@
+/* Readable type scale and photographic hero treatment. */
+:root{--muted:#526981}
+.container{width:calc(100% - 80px);max-width:1440px}
+.header{height:88px}.nav{gap:24px}.nav a{font-size:15px}.wordmark{font-size:25px}
+.hero-inner{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;padding-block:44px}
+.eyebrow{font-size:12px;letter-spacing:1.7px;color:#4d7295}
+.identity{margin-block:26px}.portrait{width:104px;height:104px}.portrait-placeholder small{font-size:7px}.portrait-placeholder>span{font-size:36px}
+h1{font-size:36px}.role{font-size:16px;line-height:1.55}.location{font-size:14px;color:#526e89}
+.hero-copy>h2{font-size:clamp(32px,3vw,46px);line-height:1.22;letter-spacing:-1.4px}
+.hero-statement{font-size:17px;line-height:1.75;max-width:600px;color:#4c647d}
+.affiliations{gap:24px;margin-top:26px;align-items:start}
+.affiliation{flex:1;min-width:0;flex-direction:column;align-items:flex-start;gap:12px}
+.university-logo{width:195px;max-width:100%;height:56px;object-fit:contain;object-position:left center;background:none;border:none;border-radius:0;padding:0}
+.university-logo.rmit{width:157px;height:56px}
+.affiliation strong{display:none}.affiliation small{font-size:13px;color:#526981;line-height:1.55;margin:0}
+.button{font-size:15px;padding:14px 20px}.text-link{font-size:15px}.academic-link{font-size:14px}.academic-links{gap:18px;margin-top:24px}.academic-link svg{width:18px;height:18px}
+.hero-visual{isolation:isolate;justify-content:flex-end;min-height:600px;border-radius:14px;overflow:hidden;background:#d9eafa;box-shadow:0 12px 40px #375e8a12}
+.hero-science-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:48% center;z-index:-2}
+.hero-visual:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#eef7ffed 0%,#eef7ffb8 16%,transparent 42%,transparent 78%,#e9f4ffe6 100%);z-index:-1;pointer-events:none}
+.figure-heading{position:absolute;top:28px;left:28px;right:24px;margin:0}.figure-heading>span{font-size:11px;letter-spacing:1.6px;color:#456a90}.figure-heading p{font-size:28px;color:#163f73;line-height:1.35;margin-top:12px}
+.figure-footer{margin:0;padding:20px 22px;gap:12px;font-size:9px;line-height:1.6;letter-spacing:.7px;color:#315778;flex-wrap:wrap}
+.hero-bottom{font-size:12px;padding-block:18px;color:#536f89}
+.metrics{padding-block:30px}.metric{gap:17px;padding-left:22px}.metric strong{font-size:29px}.metric:last-child strong{font-size:21px}.metric span{font-size:15px}.metric small{font-size:12px;color:#5d738a;line-height:1.5}
+.section{padding-block:64px}.section h2,.closing-section h2{font-size:34px}.section-heading{margin-bottom:30px}.section-caption{font-size:15px;color:#61788e}
+.research-grid{gap:22px}.research-image{height:190px}.image-index{font-size:12px;padding:5px 8px}
+.research-card-copy{padding:24px 20px;display:flex;flex-direction:column;height:calc(100% - 190px)}.card-eyebrow{font-size:10px;line-height:1.6;letter-spacing:.9px;color:#547898}
+.research-card h3{font-size:20px;line-height:1.4;min-height:84px;margin-top:12px}.research-card p{font-size:16px;line-height:1.75;min-height:0;margin:14px 0 20px;color:#526981}.research-card .tags{margin-top:auto}
+.tags{gap:7px}.tags>span{font-size:12px;line-height:1.5;padding:5px 8px;color:#496e92}
+.empty-state{padding:32px}.empty-state h3{font-size:21px}.empty-state p{font-size:16px;color:#5a7088}.status-label{font-size:11px;line-height:1.65;color:#5b758e}
+.publication-list h3{font-size:22px}.publication-list p{font-size:16px}.body-copy{font-size:17px;max-width:560px}.impact-note h3{font-size:22px}.impact-note p{font-size:16px}
+.experience-grid h3{font-size:22px}.experience-grid p{font-size:16px;line-height:1.7}.experience-grid small{font-size:14px;color:#657d94}.experience-grid article{padding:30px}.keyword-row>span{font-size:12px}
+.closing-section>div{padding:42px}.closing-section p{font-size:16px;max-width:440px}.contact-pending{font-size:15px}.footer .wordmark{font-size:21px}.footer>span{font-size:13px}
+@media(max-width:1200px){
+ .container{width:calc(100% - 56px)}.nav{gap:17px}.nav a{font-size:14px}.wordmark{font-size:22px}
+ .hero-inner{gap:26px;grid-template-columns:1fr 1fr}h1{font-size:30px}.portrait{width:86px;height:86px}.identity{gap:16px}.role{font-size:15px}.hero-copy>h2{font-size:35px}.hero-statement{font-size:16px}
+ .hero-visual{min-height:640px}.affiliations{gap:16px}.affiliation small{font-size:12px}.university-logo{width:174px;height:49px}.university-logo.rmit{width:140px;height:49px}.figure-heading p{font-size:25px}
+ .research-grid{grid-template-columns:1fr 1fr;gap:24px}.research-image{height:220px}.research-card-copy{height:calc(100% - 220px)}.research-card h3{min-height:56px;font-size:22px}.research-card p{font-size:16px}.metric:last-child strong{font-size:18px}
+}
+@media(max-width:1000px){
+ .header{height:76px}.menu-toggle{display:grid;place-items:center;border:1px solid var(--line);border-radius:5px;background:#fff;padding:9px;color:var(--navy)}
+ .nav{display:none;position:absolute;top:75px;left:0;right:0;background:#fff;padding:20px 28px;box-shadow:0 15px 20px #21375110}.nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}.nav a{font-size:16px;padding:13px}.nav a:first-child:after{display:none}.nav a:last-child{margin-top:8px}
+ .hero-inner{grid-template-columns:1fr}.hero-visual{min-height:0;aspect-ratio:3/2;max-height:660px}.hero-copy{max-width:760px}.hero-statement{max-width:720px;font-size:18px}.hero-copy>h2{font-size:42px}.identity{align-items:center}.affiliations{flex-direction:row;max-width:560px}.affiliation small{font-size:14px}.university-logo{width:205px;height:58px}.university-logo.rmit{width:164px;height:58px}.hero-actions{margin-top:28px}.academic-links{margin-bottom:12px}.figure-heading p{font-size:30px}.figure-heading{top:26px;left:28px}.figure-footer{flex-direction:row;align-items:center}
+ .metrics{grid-template-columns:1fr 1fr;row-gap:28px}.metric:nth-child(3){padding-left:0;border:0}.metric:last-child strong{font-size:22px}.metric span{font-size:16px}.metric small{font-size:13px}
+ .impact-details{gap:35px}.section h2,.closing-section h2{font-size:30px}
+}
+@media(max-width:600px){
+ .container{width:calc(100% - 36px)}.wordmark{font-size:22px}.hero-inner{padding-block:30px;gap:24px}.eyebrow{font-size:11px}.portrait{width:78px;height:78px}.portrait-placeholder small{font-size:6px}.identity{gap:13px;margin-block:24px}h1{font-size:27px}.role{font-size:14px}.location{font-size:13px}.hero-copy>h2{font-size:35px;letter-spacing:-1.1px}.hero-statement{font-size:16px;line-height:1.8}
+ .affiliations{gap:20px;flex-wrap:nowrap}.university-logo{height:45px;width:166px}.university-logo.rmit{height:45px;width:130px}.affiliation small{font-size:12px}.hero-actions{gap:22px}.button,.text-link{font-size:14px}.button{padding:13px 16px}.academic-links{gap:16px}.academic-link{font-size:13px}
+ .hero-visual{aspect-ratio:1/1;min-height:0;margin-top:0;border-radius:10px}.hero-science-image{object-position:48% center}.figure-heading{top:20px;left:20px;right:18px}.figure-heading>span{font-size:9px}.figure-heading p{font-size:23px;line-height:1.4}.figure-footer{padding:14px 15px;font-size:8px;gap:6px}.figure-footer>span:last-child{font-size:7px}.hero-bottom{font-size:12px}
+ .metrics{gap:24px 12px}.metric{gap:10px;padding-left:12px}.metric>svg{width:23px;flex-shrink:0}.metric strong{font-size:28px}.metric:last-child strong{font-size:17px}.metric span{font-size:13px}.metric small{font-size:11px}
+ .section{padding-block:42px}.section h2,.closing-section h2{font-size:28px}.section-heading{margin-bottom:23px}.research-grid{grid-template-columns:1fr;gap:22px}.research-image{height:auto;aspect-ratio:5/3}.research-card-copy{padding:24px;height:auto}.research-card h3{font-size:23px;min-height:0;margin-top:10px}.research-card p{font-size:16px;line-height:1.8;margin-block:12px 20px}.card-eyebrow{font-size:11px}.tags>span{font-size:12px}.image-index{font-size:12px}
+ .empty-state{padding:24px 20px;gap:14px}.empty-state h3{font-size:20px}.empty-state p{font-size:15px}.empty-icon{padding:10px}.status-label{font-size:10px}.impact-details{grid-template-columns:1fr;gap:28px}.impact-note h3{font-size:21px}.impact-note p,.body-copy{font-size:16px}.experience-grid article{padding:24px 20px}.experience-grid h3{font-size:21px}.experience-grid p{font-size:15px}.experience-grid small{font-size:13px}.keyword-row{flex-direction:column;gap:12px}.closing-section>div{padding:30px 24px}.closing-section p{font-size:16px}.contact-pending{font-size:14px;line-height:1.6}.footer .wordmark{font-size:19px}.footer>span{font-size:11px}
+}
