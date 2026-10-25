@@ -1,0 +1,6 @@
+import { FileText, Download, Mail, Linkedin, ArrowUpRight } from 'lucide-react';
+import { profile } from '../data/profile';
+export default function Contact(){return <section className="container closing-section">
+ <div id="cv" className="cv-panel"><FileText size={29}/><span className="section-kicker">Curriculum vitae</span><h2>The full academic profile.</h2><p>Education, research and professional experience.</p>{profile.cv?<a className="button primary" href={import.meta.env.BASE_URL+profile.cv} download>Download CV <Download size={17}/></a>:<><span className="availability">CV PDF to be added</span><a className="text-link" href={profile.links.linkedin} target="_blank" rel="noreferrer">View professional profile <ArrowUpRight size={16}/></a></>}</div>
+ <div id="contact" className="contact-panel"><Mail size={29}/><span className="section-kicker">Contact</span><h2>Connect through research.</h2><p>For research conversations and professional enquiries.</p>{profile.links.email?<a className="button primary" href={'mailto:'+profile.links.email}>Email me <Mail size={17}/></a>:<span className="availability">Professional email to be added</span>}<a className="button secondary" href={profile.links.linkedin} target="_blank" rel="noreferrer"><Linkedin size={17}/>Connect on LinkedIn <ArrowUpRight size={16}/></a></div>
+ </section>;}
