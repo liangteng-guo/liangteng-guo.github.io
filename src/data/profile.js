@@ -16,7 +16,7 @@ export const profile = {
   interests: ['Phononic crystals & wave manipulation', 'Phase-change materials & shape-memory alloys', 'Graphene-reinforced composites', 'Machine learning & PINNs / XPINNs', 'Novel structures & computational mechanics'],
   affiliations: [
     { name: 'The University of Queensland', detail: 'Doctor of Philosophy · Australia', logo: 'assets/logos/uq-official.svg', kind: 'uq' },
-    { name: 'RMIT University', detail: 'Casual Researcher · Australia', logo: 'assets/logos/rmit-official.png', kind: 'rmit' }
+    { name: 'RMIT University', detail: 'Researcher · Australia', logo: 'assets/logos/rmit-official.png', kind: 'rmit' }
   ],
   links: {
     scholar: 'https://scholar.google.com.au/citations?user=1Y0Y4_UAAAAJ&hl=en',
